@@ -34,3 +34,6 @@ func main() {
 	}
 }
 ```
+
+## Docs
+Docs can be obtained on the [godoc page](http://godoc.org/github.com/jokeofweek/ip).
