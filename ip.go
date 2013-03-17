@@ -30,10 +30,12 @@ func getIpRecordFromUrl(url string) (*IpRecord, error) {
 	return &record, nil
 }
 
+// Fetches the IP record for a specified IP address.
 func GetIpRecord(ip string) (*IpRecord, error) {
 	return getIpRecordFromUrl(fmt.Sprintf("http://api.hostip.info/get_json.php?position=true&ip=%s", ip))
 }
 
+// Fetches the IP record for the IP address of the current computer.
 func GetOwnIpRecord() (*IpRecord, error) {
 	return getIpRecordFromUrl("http://api.hostip.info/get_json.php?position=true")
 }
